@@ -1,8 +1,7 @@
 ####
 #### R code for Ushio et al.
-#### "Fluctuating interaction network and dynamic stability of a natural fish community"
+#### "Fluctuating interaction network and time-varying stability of a natural fish community"
 #### No.S1 Helper functions
-#### 2017.5.17 Ushio
 ####
 
 # Check best embedding dimension
