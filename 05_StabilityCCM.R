@@ -1,7 +1,7 @@
 ####
 #### R code for Ushio et al.
 #### "Fluctuating interaction network and time-varying stability of a natural fish community"
-#### No.5 CCM between the resilience index and other variables
+#### No.5 CCM between the dynamic stability and other variables
 ####
 
 # Load config
