@@ -118,7 +118,7 @@ plot(
 )
 box()
 axis(2, las = 2); axis(1, las = 1)
-abline(h = -1, lty = 2)
+abline(h = 1, lty = 2)
 abline(v = (1:12) * 24,
        col = "gray50",
        lwd = 1)
