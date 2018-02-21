@@ -23,3 +23,6 @@ or decompress rEDM.zip and copy it to your R library folder.
 
 # Instructions
 The main script file is RunAllScripts.R. Sourcing this file will run the analyses and produce the figures for the paper.
+
+# Paper
+The results are published in Ushio M, Hsieh CH, Masuda R, Deyle RE, Ye H, Chang CW, Sugihara G, Kondoh M (2018) "Fluctuating interaction entwork and time-varying stability of a natural fish community" Nature 554 (7692): 360–363 doi:101038/nature25504
