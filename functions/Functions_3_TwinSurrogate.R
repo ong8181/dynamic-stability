@@ -187,9 +187,13 @@ TwinSurrogate <- function(original,
     data.frame(matrix(rep(NaN, num.iter * length(original)), ncol = num.iter))
   if (avoid.infinite.loop <= 30 * num.iter) {
     for (i in 1:num.iter) {
-      if (dim >= 2) {
+      if (dim >= 2 & tau == 1) {
         surrogate.one.col[1:(dim - 1), i] <- surrogate[[i]][1, 1:(dim - 1)]
         surrogate.one.col[dim:length(original), i] <- surrogate[[i]][, dim]
+      } else if(dim >= 2 & tau > 1){
+        surrogate.block <- c(surrogate[[i]][1:tau, 1:(dim - 1)])
+        surrogate.one.col[1:length(surrogate.block), i] <- surrogate.block
+        surrogate.one.col[(length(surrogate.block)+1):length(original), i] <- surrogate[[i]][, dim]
       } else {
         surrogate.one.col[dim:length(original), i] <- surrogate[[i]]
       }
